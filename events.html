@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Nestable</title>
+
+</head>
+
+<body>
+	
+	<div class="dd">
+	    <ol class="dd-list">
+	        <li class="dd-item" data-id="1">
+	            <div class="dd-handle">Item 1</div>
+	        </li>
+	        <li class="dd-item" data-id="2">
+	            <div class="dd-handle">Item 2</div>
+	        </li>
+	        <li class="dd-item" data-id="3">
+	            <div class="dd-handle">Item 3</div>
+	            <ol class="dd-list">
+	                <li class="dd-item" data-id="4">
+	                    <div class="dd-handle">Item 4</div>
+	                </li>
+	                <li class="dd-item" data-id="5">
+	                    <div class="dd-handle">Item 5</div>
+	                </li>
+	            </ol>
+	        </li>
+	    </ol>
+	</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="jquery.nestable.js"></script>
+<script>
+<!--
+	$(document).ready(function (){
+		//
+		$('.dd').nestable('serialize');
+
+		$('.dd').on('change', function() {
+		    //
+		    var id = $(this).data('id');
+
+		    console.log('changed! ' + id);
+		});
+
+	});
+-->
+</script>
+
+</body>
+</html>
+
