@@ -37,14 +37,18 @@
 <!--
 	$(document).ready(function (){
 		//
-		$('.dd').nestable('serialize');
+		$('.dd').nestable({
+			dropCallback: function(details) {
+				console.log(details.sourceId);
+			}
+		});
 
-		$('.dd').on('change', function() {
+		/*$('.dd').on('change', function() {
 		    //
 		    var id = $(this).data('id');
 
 		    console.log('changed! ' + id);
-		});
+		});*/
 
 	});
 -->
